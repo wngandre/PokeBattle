@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Pokemon Solid";
+  src: url("/Projet Pokémon/css/PokemonSolid.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d843okx-eb13e8e4-0fa4-4fa9-968a-e0f36ff168de.png/v1/fit/w_800,h_480,q_70,strp/pokemon_x_and_y_battle_background_11_by_phoenixoflight92_d843okx-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDgwIiwicGF0aCI6IlwvZlwvMmZiMjgyMWEtMTQwNi00YTFkLTliMDQtNjY2OGYyNzhlOTQ0XC9kODQzb2t4LWViMTNlOGU0LTBmYTQtNGZhOS05NjhhLWUwZjM2ZmYxNjhkZS5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.m5eG5d4O5_xTOZAmNu5BcPF8rs01F7Pp4y2g2R14kOE")
+    no-repeat;
+  background-size: cover;
+}
+
+.pokemon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.title img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.title h1 {
+  font-size: 5em;
+  color: #ffcb05; /* Jaune */
+  text-shadow: -5px -5px 0 #3b4cca, 5px -5px 0 #3b4cca, -5px 5px 0 #3b4cca,
+    5px 5px 0 #3b4cca; /* Bleu contour plus épais */
+  font-family: Pokemon Solid;
+  margin-right: 30px;
+}
+
+.container-bloc {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.pokemon-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.pokemon-img img {
+  width: 130px;
+  height: 130px;
+}
+
+.versus h1 {
+  font-size: 4em;
+  color: #ffcb05; /* Jaune */
+  text-shadow: -5px -5px 0 #3b4cca, 5px -5px 0 #3b4cca, -5px 5px 0 #3b4cca,
+    5px 5px 0 #3b4cca; /* Bleu contour plus épais */
+  font-family: Pokemon Solid;
+}
+
+/* Conteneur du formulaire : CHOISISSEZ VOS POKÉMONS */
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  margin-bottom: 50px;
+}
+
+form h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+/* Bouton Lancer le combat */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Logs du combat */
+
+.combat {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.combat-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.combat-intro,
+.combat-turn,
+.combat-winner {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.pokemon-status {
+  font-weight: bold;
+  color: #0073e6;
+}
+
+.combat-damage {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.pokemon-attacker,
+.pokemon-defender,
+.pokemon-winner {
+  font-weight: bold;
+  color: #333;
+}
+
+.combat-winner {
+  text-align: center;
+  font-size: 1.2em;
+  color: #28a745;
+}
+
+.pokemon-winner {
+  text-align: center;
+}
+
+.pokemon-winner img {
+  width: 150px;
+  height: 150px;
+}
