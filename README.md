@@ -1,4 +1,4 @@
-Combat Pokémon en PHP
+Combat Pokémon en PHP - WANG ANDRE
 
 Ce projet est une application simple de gestion de combat entre Pokémon, développée en PHP avec une architecture orientée objet.
 
@@ -14,4 +14,4 @@ Fonctionnalités
 	•	Gestion des attaques spéciales et des forces/faiblesses.
  Installation
 
-	1.	Clone : git clone https://github.com/votre-utilisateur/combat-pokemon.git
+	git clone https://github.com/votre-utilisateur/combat-pokemon.git
