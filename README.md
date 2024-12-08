@@ -14,4 +14,4 @@ Fonctionnalités
 	•	Gestion des attaques spéciales et des forces/faiblesses.
  Installation
 
-	git clone https://github.com/votre-utilisateur/combat-pokemon.git
+	git clone : https://github.com/wngandre/PokeBattle.git
